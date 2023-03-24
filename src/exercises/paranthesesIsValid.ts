@@ -1,3 +1,5 @@
+// Problem URL: https://leetcode.com/problems/valid-parentheses
+
 type IValidKeys = "(" | "[" | "{";
 
 export function paranthesesIsValid(s: string): boolean {

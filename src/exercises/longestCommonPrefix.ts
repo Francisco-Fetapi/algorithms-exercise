@@ -1,3 +1,5 @@
+//Problem URL: https://leetcode.com/problems/longest-common-prefix
+
 export function longestCommonPrefix(strs: string[]): string {
   let commonPrefixes = "";
 

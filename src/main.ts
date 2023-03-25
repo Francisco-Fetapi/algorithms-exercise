@@ -1,9 +1,7 @@
 import "./style.css";
 import typescriptLogo from "./typescript.svg";
 import { setupCounter } from "./counter";
-import { removeDuplicates } from "./exercises/removeDuplicates";
-
-removeDuplicates([1, 1, 2, 3, 4, 4, 4, 5, 6, 6]);
+import { removeElement } from "./exercises/removeElement";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>

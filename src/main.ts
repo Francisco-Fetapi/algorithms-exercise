@@ -1,7 +1,6 @@
 import "./style.css";
 import typescriptLogo from "./typescript.svg";
 import { setupCounter } from "./counter";
-import { removeElement } from "./exercises/removeElement";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>

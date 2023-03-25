@@ -1,8 +1,9 @@
 import "./style.css";
 import typescriptLogo from "./typescript.svg";
 import { setupCounter } from "./counter";
+import { removeDuplicates } from "./exercises/removeDuplicates";
 
-const array = [3, 2, 0, 1, 5, 4, 13, 20, 14, 15, 23, 100, 102];
+removeDuplicates([1, 1, 2, 3, 4, 4, 4, 5, 6, 6]);
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>

@@ -1,6 +1,6 @@
 import { lengthOfLastWord } from "../exercises/lengthOfLastWord";
 
-describe("Find the position of value in O(log n) time complexity", () => {
+describe("Find out the length of last word", () => {
   it("Should be running well", () => {
     expect(lengthOfLastWord("Hello World")).toBe(5);
     expect(lengthOfLastWord("   fly me   to   the moon  ")).toBe(4);

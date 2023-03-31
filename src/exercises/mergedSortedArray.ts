@@ -20,7 +20,7 @@ export function mergedSortedArray(
 
   //   TODO: bubble sort,not, use other algorithm instead.
   for (let i = 0; i < m; i++) {
-    for (let j = 0; j < m; j++) {
+    for (let j = i; j < m; j++) {
       if (nums1[j] > nums1[j + 1]) {
         let temp = nums1[j];
         nums1[j] = nums1[j + 1];

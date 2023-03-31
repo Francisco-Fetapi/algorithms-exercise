@@ -9,9 +9,9 @@ export function removeElement(nums: Array<number | null>, val: number): number {
 
   //   TODO: improve algorithm to order, instead use bubble-sort use another.
   for (let i = 0; i < nums.length; i++) {
-    for (let j = i + 1; j < nums.length; j++) {
-      if (nums[j] !== null && nums[i] === null) {
-        nums[i] = nums[j];
+    for (let j = i; j < nums.length; j++) {
+      if (nums[j] !== null && nums[j + 1] === null) {
+        nums[j + 1] = nums[j];
         nums[j] = null;
       }
     }

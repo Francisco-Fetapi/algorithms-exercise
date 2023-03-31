@@ -12,9 +12,9 @@ export function removeDuplicates(nums: Array<number | null>): number {
   //TODO: implement other algorithm to order instead bubble-sort
 
   for (let i = 0; i < nums.length; i++) {
-    for (let j = i + 1; j < nums.length; j++) {
-      if (nums[i] === null && nums[j] !== null) {
-        nums[i] = nums[j];
+    for (let j = i; j < nums.length; j++) {
+      if (nums[j] !== null && nums[j + 1] === null) {
+        nums[j + 1] = nums[j];
         nums[j] = null;
       }
     }

@@ -19,7 +19,5 @@ export function pascalsTriangle(numsRows: number): number[][] {
     triangle.push(newLine);
   }
 
-  console.log(triangle);
-
   return triangle;
 }

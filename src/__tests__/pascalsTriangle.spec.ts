@@ -1,6 +1,6 @@
 import { pascalsTriangle } from "../exercises/pascalsTriangle";
 
-describe("Convert Roman Numbers to Int", () => {
+describe("Show Pascal's Triangle", () => {
   it("Should be running well", () => {
     expect(pascalsTriangle(5)).toEqual([
       [1],

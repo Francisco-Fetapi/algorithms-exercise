@@ -1,26 +1,24 @@
 // Problem URL: https://leetcode.com/problems/best-time-to-buy-and-sell-stock
 
 export function maxProfit(prices: number[]): number {
-  let profit = 0; //price for sell - price for buy
-  let priceForBuy = 0;
-  let priceForSell = 0;
+  let maxProfit = 0;
+  let price = {
+    buy: 0,
+    sell: 1,
+  };
 
-  for (let i = 0; i < prices.length; i++) {
-    priceForBuy = prices[i];
+  while (price.sell < prices.length) {
+    let priceToBuy = prices[price.buy];
+    let priceToSell = prices[price.sell];
+    let profit = priceToSell - priceToBuy;
 
-    for (let j = i + 1; j < prices.length; j++) {
-      priceForSell = prices[j];
-      let newPossibleProfit = priceForSell - priceForBuy;
+    maxProfit = Math.max(profit, maxProfit);
 
-      if (newPossibleProfit < 0) {
-        break;
-      }
-
-      if (newPossibleProfit > profit) {
-        profit = newPossibleProfit;
-      }
+    if (profit < 0) {
+      price.buy = price.sell;
     }
+    price.sell++;
   }
 
-  return profit;
+  return maxProfit;
 }

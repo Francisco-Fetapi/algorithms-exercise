@@ -1,10 +1,9 @@
 // Problem URL: https://leetcode.com/problems/add-binary
 
-export function addBinary(a: string, b: string): string {
-  let numberADecimal = parseInt(a, 2);
-  let numberBDecimal = parseInt(b, 2);
-  let resultDecimal = numberADecimal + numberBDecimal;
-  let resultBinary = resultDecimal.toString(2);
+//  // we used BigInt() to convert binary to Integer. Syntax is BigInt(0b11) here `0b` is prefix and `11` is binary number
 
-  return resultBinary;
+export function addBinary(a: string, b: string): string {
+  let sum = BigInt(`0b${a}`) + BigInt(`0b${b}`);
+
+  return sum.toString(2);
 }

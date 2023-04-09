@@ -1,3 +1,5 @@
+// Problem URL: https://leetcode.com/problems/single-number
+
 export function singleOne(nums: number[]): number {
   let single = nums[0];
   let numbersCount: Record<string, number> = {};

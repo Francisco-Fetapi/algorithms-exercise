@@ -20,7 +20,5 @@ export function searchInsertPosition(nums: number[], target: number): number {
     } else if (nums[middle] - 1 === target) {
       return middle;
     }
-
-    console.log("Testing time complexity...", nums, target, middle);
   }
 }

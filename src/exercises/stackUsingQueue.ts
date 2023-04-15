@@ -1,3 +1,4 @@
+// Problem URL: https://leetcode.com/problems/implement-stack-using-queues/
 // You can only use unshift and shift.
 
 export class MyStack<T = any> {

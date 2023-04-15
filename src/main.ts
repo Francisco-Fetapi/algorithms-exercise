@@ -1,9 +1,6 @@
 import "./style.css";
 import typescriptLogo from "./typescript.svg";
 import { setupCounter } from "./counter";
-import { containsNearbyDuplicates } from "./exercises/containsNearbyDuplicates";
-
-containsNearbyDuplicates([1, 2, 3, 1], 3);
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>

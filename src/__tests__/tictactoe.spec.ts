@@ -11,6 +11,7 @@ describe("Tic Toc Toe", () => {
         [2, 2],
       ])
     ).toBe("A");
+    expect(tictactoe([[0, 0]])).toBe("Pending");
     expect(
       tictactoe([
         [0, 0],
@@ -36,16 +37,8 @@ describe("Tic Toc Toe", () => {
     ).toBe("Draw");
   });
   it("Should be working", () => {
-    let res1 = matched([
-      [0, 0],
-      [0, 1],
-      [0, 2],
-    ]);
-    let res2 = matched([
-      [0, 0],
-      [0, 1],
-      [0, 0],
-    ]);
+    let res1 = matched([1, 2, 0]);
+    let res2 = matched([1, 2, 1]);
 
     expect(res1).toBe(true);
     expect(res2).toBe(false);
